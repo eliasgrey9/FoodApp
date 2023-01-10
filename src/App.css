@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: auto;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  padding: 2vmin;
+  flex-direction: column;
+  border: solid lightgray 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.topInputs {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.get-recipes-btn {
+  border-radius: 0.5vmin;
+  width: 50%;
+  height: 5vmin;
+  font-size: 2.5vmin;
+  cursor: pointer;
+}
+
+img {
+  border-radius: 0.5vmin;
+  width: 60vw;
+  height: auto;
+  margin: 2vmin;
+}
+
+.displayedRecipe {
+  padding: 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.goToRecipeBtn {
+  font-size: 3vmin;
+  text-decoration: none;
+  color: black;
+  border-radius: 0.5vmin;
+}
+
+.recipeTitles {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: none;
+  margin: 0.5vmin;
+  padding: 1.5vmin;
+  width: 50vmin;
+}
+.recipeTitles:hover {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.pickOne {
+  font-size: 3.5vmin;
+  text-align: center;
+  font-weight: 600;
+}
+.displayedRecipeTitle {
+  text-align: center;
+  margin-top: 4vmin;
+  font-size: 4vmin;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: black;
 }
